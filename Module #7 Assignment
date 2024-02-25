@@ -1,0 +1,15 @@
+# S3 example
+s3 <- list(name = "Brayden", age = 2o, GPA = 3.7) 
+class(s3) <- "student_s3"
+s3
+
+
+# S4 example
+library(methods)
+
+# Define S4 class
+setClass("student_s4", slots = c(name = "character", age = "numeric", GPA = "numeric"))
+
+# Create an instance of the S4 class
+s4 <- new("student_s4", name = "Brayden", age = 20, GPA = 3.7)
+s4
